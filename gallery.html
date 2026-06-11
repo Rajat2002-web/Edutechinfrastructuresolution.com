@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edutech Infrastructure Solutions - Gallery</title>
+<meta name="description" content="Educational Infrastructure, STEM Labs, Robotics Labs, AI IoT Labs, Smart Classrooms">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+.brand-container {
+  display: flex;         /* Activates flexbox layout */
+  align-items: center;  /* Aligns logo and text vertically */
+  gap: 12px;             /* Creates a clean gap between them */
+}
+
+.site-logo {
+ height: 40px;          /* Restricts logo to an appropriate size */
+  width: auto;           /* Keeps the logo aspect ratio perfect */
+  border-radius: 50%;    /* Turns the square into a perfect circle */
+  object-fit: cover;     /* Prevents the logo image from stretching or distorting */
+}
+
+body{font-family:Arial,sans-serif}
+.navbar{background:#0A4D8C}
+.hero{background:linear-gradient(rgba(10,77,140,.8),rgba(10,77,140,.8)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover;height:70vh;color:#fff;display:flex;align-items:center}
+.btn-main{background:#F7931E;color:#fff}
+footer{background:#0b2340;color:#fff;padding:30px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:12px 18px;border-radius:50px;text-decoration:none;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f8fc;
+}
+
+header{
+    background:linear-gradient(135deg,#0a4a9c,#1c78d4);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+.gallery-section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#0a4a9c;
+    font-size:2.5rem;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(10,74,156,0.9);
+    color:white;
+    padding:15px;
+    transform:translateY(100%);
+    transition:0.4s;
+}
+
+.gallery-item:hover .overlay{
+    transform:translateY(0);
+}
+
+.overlay h3{
+    margin-bottom:5px;
+}
+
+.stats{
+    background:#0a4a9c;
+    color:white;
+    padding:60px 8%;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:2.5rem;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<div class="brand-container">
+  <!-- The logo image comes first -->
+  <img src="images/logo.png" alt="Company Logo" class="site-logo">
+  
+  <!--The text title comes second -->
+  <h1 class="navbar-brand" href="index.html">Edutech Infrastructure Solutions</h1> 
+</div> 
+<div class="navbar-nav ms-auto">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="services.html">Services</a>
+<!--<a class="nav-link" href="projects.html">Projects</a>> -->
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container text-center">
+<h1 data-aos="fade-up">Transforming Schools Through Technology & Innovation</h1>
+<p data-aos="fade-up">Premium Educational Infrastructure & Technology Solutions</p>
+<a class="btn btn-main">Request Quote</a>
+</div>
+</section>
+
+<div class="container py-5">
+<header>
+    <h1>Project Gallery</h1>
+    <p>Explore Our Generator Installations & Power Backup Solutions</p>
+</header>
+
+<section class="gallery-section">
+
+    <div class="section-title">
+        <h2>Our Recent Projects</h2>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="images/diesel-generator.jpg" alt="">
+            <div class="overlay">
+                <h3>Diesel Generator Installation</h3>
+                <p>Reliable backup power for educational institutions.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/silent-generator.jpg" alt="">
+            <div class="overlay">
+                <h3>Silent Generator</h3>
+                <p>Noise-free power solutions for schools and colleges.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/power-backup.jpg" alt="">
+            <div class="overlay">
+                <h3>Power Backup System</h3>
+                <p>Advanced UPS and battery backup installations.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/amc-service.jpg" alt="">
+            <div class="overlay">
+                <h3>AMC Maintenance</h3>
+                <p>Regular servicing and preventive maintenance.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/school-project.jpg" alt="">
+            <div class="overlay">
+                <h3>School Generator Project</h3>
+                <p>Uninterrupted learning with dependable power backup.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/industrial-generator.jpg" alt="">
+            <div class="overlay">
+                <h3>Large Capacity Generator</h3>
+                <p>High-performance energy solutions.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats">
+    <div class="stats-grid">
+
+        <div class="stat-box">
+            <h2>----</h2>
+            <p>Installations</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>----</h2>
+            <p>Schools Served</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Support</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>99%</h2>
+            <p>Client Satisfaction</p>
+        </div>
+
+    </div>
+</section>
+</div>
+
+<footer class="text-center">
+<p>STEM Labs | Robotics Labs | AI & IoT Labs | Smart Classrooms</p>
+<p>© Edutech Infrastructure Solutions</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/8303524044">WhatsApp</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

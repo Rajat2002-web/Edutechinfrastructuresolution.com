@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edutech Infrastructure Solutions - Blog</title>
+<meta name="description" content="Educational Infrastructure, STEM Labs, Robotics Labs, AI IoT Labs, Smart Classrooms">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+.brand-container {
+  display: flex;         /* Activates flexbox layout */
+  align-items: center;  /* Aligns logo and text vertically */
+  gap: 12px;             /* Creates a clean gap between them */
+}
+
+.site-logo {
+ height: 40px;          /* Restricts logo to an appropriate size */
+  width: auto;           /* Keeps the logo aspect ratio perfect */
+  border-radius: 50%;    /* Turns the square into a perfect circle */
+  object-fit: cover;     /* Prevents the logo image from stretching or distorting */
+}
+
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#004aad,#0078ff);
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+}
+
+.blog-section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#004aad;
+    font-size:2.5rem;
+}
+
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.blog-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.blog-card:hover{
+    transform:translateY(-8px);
+}
+
+.blog-img{
+    height:220px;
+    overflow:hidden;
+}
+
+.blog-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:25px;
+}
+
+.category{
+    display:inline-block;
+    background:#004aad;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:15px;
+}
+
+.blog-content h3{
+    color:#004aad;
+    margin-bottom:10px;
+}
+
+.blog-content p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.read-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#28a745;
+    color:white;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+body{font-family:Arial,sans-serif}
+.navbar{background:#0A4D8C}
+.hero{background:linear-gradient(rgba(10,77,140,.8),rgba(10,77,140,.8)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover;height:70vh;color:#fff;display:flex;align-items:center}
+.btn-main{background:#F7931E;color:#fff}
+footer{background:#0b2340;color:#fff;padding:30px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:12px 18px;border-radius:50px;text-decoration:none;}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+<div class="brand-container">
+  <!-- The logo image comes first -->
+  <img src="images/logo.png" alt="Company Logo" class="site-logo">
+  
+  <!--The text title comes second -->
+  <h1 class="navbar-brand" href="index.html">Edutech Infrastructure Solutions</h1> 
+</div> 
+<div class="navbar-nav ms-auto">
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="services.html">Services</a>
+<!--<a class="nav-link" href="projects.html">Projects</a> -->
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link" href="blog.html">Blog</a>
+<a class="nav-link" href="contact.html">Contact</a>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container text-center">
+<h1 data-aos="fade-up">Transforming Schools Through Technology & Innovation</h1>
+<p data-aos="fade-up">Premium Educational Infrastructure & Technology Solutions</p>
+<a class="btn btn-main">Request Quote</a>
+</div>
+</section>
+
+<div class="container py-5">
+<header>
+    <h1>Educational Solutions Blog</h1>
+    <p>Insights, Innovations & Infrastructure Solutions for Modern Schools</p>
+</header>
+
+<section class="blog-section">
+
+<div class="section-title">
+    <h2>Latest Blog Categories</h2>
+</div>
+
+<div class="blog-grid">
+
+    <!-- Composite Skill Lab -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/composite-skill-lab.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Composite Skill Lab</span>
+            <h3>Why Every School Needs a Composite Skill Lab</h3>
+ <p>
+<p>The Composite Skill Lab is designed to provide practical, activity-based learning experiences that help students develop critical life and vocational skills. Under NEP 2020 guidelines, schools are encouraged to promote experiential learning through dedicated skill development spaces.</p><br>
+<b> Benefits</b><br>
+<ul>
+  <li>Hands-on learning approach</li>
+  <li>Enhances creativity and innovation</li>
+  <li>Supports vocational education</li>
+  <li>Improves teamwork and communication skills</li>
+  <li>Develops problem-solving abilities</li>
+</ul>
+<b> Components Included </b><br>
+<ul>
+  <li>Carpentry Tools</li>
+  <li>Electrical Training Kits</li>
+  <li>Electronics Workstations</li>
+  <li>Mechanical Models</li>
+  <li>Entrepreneurship Learning Modules</li>
+</ul>
+<b> Learning Outcomes </b><br>
+
+Students gain practical exposure to real-world skills that improve employability and prepare them for future careers.</p>
+            <a href="https://share.google/1wGntS0DFmThmOWHd" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Computer Lab -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/computer-lab.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Computer Lab</span>
+            <h3>Building Future-Ready Computer Labs</h3>
+            <p>
+                <p> A modern computer lab plays a crucial role in digital education. It provides students with access to technology, programming, internet research, and digital literacy skills essential for the 21st century.</p><br>
+
+<b> Features </b><br>
+<ul>
+  <li>Latest Desktop Computers</li>
+  <li>Networking Infrastructure</li>
+  <li>High-Speed Internet</li>
+  <li>Educational Software</li>
+  <li>Coding Platforms</li>
+</ul>
+<b> Benefits </b>
+<ul>
+  <li>Digital Literacy Development</li>
+  <li>Coding & Programming Skills</li>
+  <li>Online Learning Support</li>
+  <li>Research Capabilities</li>
+  <li>Career Readiness</li>
+</ul>
+<b> Recommended Configuration </b>
+<ul>
+  <li>20–40 Computers</li>
+  <li>Interactive Display</li>
+  <li>LAN Connectivity</li>
+  <li>UPS Backup</li>
+  <li>Antivirus Protection</li>
+</ul>
+</p>
+            <a href="https://share.google/sUazCxEPQImM0EQVW" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- STEM & Robotics -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/stem-robotics.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">STEM & Robotics</span>
+            <h3>STEM Education and Robotics in Schools</h3>
+            <p>
+                <p> STEM (Science, Technology, Engineering, and Mathematics) laboratories encourage students to explore scientific concepts through practical experimentation and robotics projects. </p><br>
+
+<b>Lab Components</b>
+<ul>
+  <li>Robotics Kits</li>
+  <li>Arduino Boards</li>
+  <li>Sensors & Actuators</li>
+  <li>3D Models</li>
+  <li>Engineering Projects</li>
+</ul>
+<b> Benefits </b>
+<ul>
+  <li>Critical Thinking</li>
+  <li>Innovation Skills</li>
+  <li>Engineering Concepts</li>
+  <li>Team Collaboration</li>
+  <li>Competitive Exam Preparation</li>
+</ul>
+<b>Student Activities</b>
+<ul>
+  <li>Coding Challenges</li>
+  <li>Science Projects</li>
+  <li>Automation Models</li>
+</ul>
+</p>
+            <a href="https://share.google/LSpRaIyfXcIIjl3Hx" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- AI & IoT -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/ai-iot-lab.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">AI & IoT Innovation Lab</span>
+            <h3>Preparing Students for Industry 4.0</h3>
+            <p>
+                <p> Artificial Intelligence and Internet of Things (IoT) technologies are transforming industries worldwide. AI & IoT labs help students understand emerging technologies and develop future-ready skills.</p><br>
+
+<b> Technologies Covered </b><br>
+<ul>
+  <li>Artificial Intelligence</li>
+  <li>Machine Learning</li>
+  <li>Data Analytics</li>
+  <li>Internet of Things</li>
+  <li>Smart Devices</li>
+</ul>
+<b>Applications</b>
+<ul>
+  <li>Smart Home Projects</li>
+  <li>Face Recognition Systems</li>
+  <li>Smart Agriculture Models</li>
+  <li>Predictive Analytics</li>
+  <li>Automation Solutions</li>
+</ul>
+<b>Benefits</b>
+<ul>
+  <li>Industry-Relevant Learning</li>
+  <li>Innovation Culture</li>
+  <li>Research Skills</li>
+  <li>Career Opportunities in Technology</li>
+</ul>
+</p>
+            <a href="https://share.google/IBEmDQdZEw4QQjVEx" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Smart Classroom -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/smart-classroom.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Smart Classroom</span>
+            <h3>Transforming Education with Smart Classrooms</h3>
+            <p>
+                <P> Smart classrooms integrate technology with traditional teaching methods to improve engagement and learning outcomes.</P><br>
+
+<b>Features</b>
+<ul>
+  <li>Interactive Teaching Content</li>
+  <li>Multimedia Learning</li>
+  <li>Digital Assessments</li>
+  <li>Real-Time Collaboration</li>
+  <li>Online Learning Resources</li>
+</ul>
+<b>Advantages</b>
+<ul>
+  <li>Better Student Engagement</li>
+  <li>Visual Learning Support</li>
+  <li>Increased Retention</li>
+  <li>Personalized Learning Experience</li>
+  <li>Hybrid Learning Capability</li>
+</ul>
+<b>Impact</b>
+
+Studies show that interactive learning environments significantly improve student participation and academic performance.</p>
+            <a href="https://share.google/b1tOlOVYbusXRBRFO" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Smart Board -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/digital-board.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Digital Smart Board</span>
+            <h3>Benefits of Interactive Digital Boards</h3>
+            <p>
+                <p> Digital Smart Boards replace traditional blackboards and projectors with interactive touch-enabled displays.</p><br>
+
+<b>Features</b>
+<ul>
+  <li>Multi-Touch Technology</li>
+  <li>HD Display</li>
+  <li>Wireless Connectivity</li>
+  <li>Screen Recording</li>
+  <li>Interactive Teaching Tools</li>
+</ul>
+<b>Benefits</b>
+<ul>
+  <li>Dynamic Classroom Experience</li>
+  <li>Interactive Presentations</li>
+  <li> Better Visual Understanding </li>
+  <li>Increased Student Participation</li>
+  <li>Time-Saving Teaching Tools</li>
+</ul>
+<b>Ideal For</b>
+<ul>
+  <li>Schools</li>
+  <li>Colleges</li>
+  <li>Coaching Institutes</li>
+  <li>Training Centers</li>
+</ul>
+</p>
+            <a href="https://share.google/DnQvYvvEar181uzqM" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- School Infrastructure -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/school-infrastructure.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">School Infrastructure</span>
+            <h3>Modern Infrastructure for Better Learning</h3>
+            <p>
+                <P> School infrastructure directly impacts student learning, safety, and overall educational outcomes.</P><br>
+
+<b>Essential Components</b>
+<ul>
+  <li>Smart Classrooms</li>
+  <li>Science Laboratories</li>
+  <li>Computer Labs</li>
+  <li>Libraries</li>
+  <li>Sports Facilities</li>
+  <li>Clean Washrooms</li>
+</ul>
+<b>Benefits</b>
+<ul>
+  <li>Enhanced Learning Environment</li>
+  <li>Student Safety</li>
+  <li>Better Attendance</li>
+  <li>Improved Academic Performance</li>
+  <li>Positive School Reputation</li>
+  <li>Infrastructure Planning</li>
+</ul>
+
+Proper infrastructure planning ensures long-term sustainability and efficient utilization of resources.</p>
+            <a href="https://www.cbse.gov.in/cbsenew/infra.html" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Water Cooler -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/water-cooler-ro.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Water Cooler & RO System</span>
+            <h3>Importance of Safe Drinking Water in Schools</h3>
+            <p>
+                <P> Access to clean drinking water is essential for maintaining student health and improving concentration levels in schools.</P><br>
+
+<b>Features</b>
+<ul>
+  <li>Advanced RO Filtration</li>
+  <li>UV Purification</li>
+  <li>Stainless Steel Construction</li>
+  <li>High Storage Capacity</li>
+   <li>Energy Efficient Cooling</li>
+</ul>
+<b></b>Benefits</b>
+<ul>
+  <li>Safe Drinking Water</li>
+  <li>Reduced Waterborne Diseases</li>
+  <li>Improved Student Health</li>
+  <li>Compliance with School Safety Standards</li>
+</ul>
+<b> Recommended Capacity</b>
+<ul>
+    <li>Small Schools: 40–60 Litres</li>
+    <li>Medium Schools: 80–120 Litres</li>
+    <li>Large Schools: 150+ Litres</li>
+</ul>
+</p>
+            <a href="#" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+    <!-- Generator Solution -->
+    <div class="blog-card">
+        <div class="blog-img">
+            <img src="images/generator-solution.jpg" alt="">
+        </div>
+        <div class="blog-content">
+            <span class="category">Generator Solution</span>
+            <h3>Reliable Power Backup for Schools</h3>
+            <p>
+               <p> Reliable Power Backup for Uninterrupted Learning
+Power outages can disrupt classes, examinations, computer labs, and digital learning systems. Generator solutions ensure continuous operation of educational facilities.</p><br>
+
+<b>Solutions Offered</b>
+<ul>
+  <li>Diesel Generators</li>
+  <li>Silent Generators</li>
+  <li>Power Backup Systems</li>
+  <li>AMC Services</li>
+</ul>
+<b>Benefits</b>
+<ul>
+  <li>Uninterrupted Learning</li>
+  <li>Protection for Digital Equipment</li>
+  <li>Continuous Online Classes</li>
+  <li>Reliable Exam Operations</li>
+  <li>Emergency Backup Support</li>
+</ul>
+<b>Why Schools Need Power Backup</b><br>
+<p>Modern schools depend heavily on computers, smart boards, internet connectivity, and laboratory equipment. A reliable generator system ensures these resources remain operational during power failures.</p><br>
+
+<b>Recommended Capacity</b>
+<ul>
+    <li>Small Schools: 15–25 kVA</li>
+    <li>Medium Schools: 30–62.5 kVA</li>
+    <li>Large Schools: 82.5–250 kVA</li>
+</ul>
+</p>
+            <a href="https://share.google/jtglCo9vbX54xbf1Z" class="read-btn">Read More</a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+</div>
+
+<footer class="text-center">
+<p>STEM Labs | Robotics Labs | AI & IoT Labs | Smart Classrooms</p>
+<p>© Edutech Infrastructure Solutions</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/8303524044">WhatsApp</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
