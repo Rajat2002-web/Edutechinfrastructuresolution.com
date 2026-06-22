@@ -21,42 +21,7 @@
   border-radius: 50%;    /* Turns the square into a perfect circle */
   object-fit: cover;     /* Prevents the logo image from stretching or distorting */
 }
-/* Base styles (Mobile First) */
-.navbar-nav ms-auto {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-}
 
-.navbar-nav ms-auto {
-  display: block; /* Visible on mobile */
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.nav-link {
-  display: none; /* Hidden by default on mobile */
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-}
-
-.nav-link {
-  display: block;
-  padding: 1rem;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
 
 /* Media Query for Desktop (Screens larger than 768px) */
 @media screen and (min-width: 768px) {
@@ -71,6 +36,58 @@
     width: auto;
   }
 }
+
+/* Base styles (Mobile First) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.menu-toggle {
+  display: block; /* Visible on mobile */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none; /* Hidden by default on mobile */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-links li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Media Query for Desktop (Screens larger than 768px) */
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide hamburger icon on desktop */
+  }
+
+  .nav-links {
+    display: flex; /* Show horizontal links on desktop */
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+}
+  
   
 body{font-family:Arial,sans-serif}
 .navbar{background:#0A4D8C}
@@ -82,27 +99,46 @@ footer{background:#0b2340;color:#fff;padding:30px}
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
+<!--   <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container">
-<!--<a class="navbar-brand" href="index.html" >Edutech Infrastructure Solutions</a> -->
 <div class="brand-container">
-  <!-- The logo image comes first -->
+
   <img src="images/logo.png" alt="Company Logo" class="site-logo">
   
-  <!--The text title comes second -->
+  <!--The text title comes second --
   <h1 class="navbar-brand" href="index.html">Edutech Infrastructure Solutions</h1> 
 </div> 
 <div class="navbar-nav ms-auto">
 <a class="nav-link" href="index.html">Home</a>
 <a class="nav-link" href="about.html">About</a>
 <a class="nav-link" href="services.html">Services</a>
-<!-- <a class="nav-link" href="projects.html">Projects</a> -->
+<!-- <a class="nav-link" href="projects.html">Projects</a> --
 <a class="nav-link" href="gallery.html">Gallery</a>
 <a class="nav-link" href="blog.html">Blog</a>
 <a class="nav-link" href="contact.html">Contact</a>
 </div>
 </div>
-</nav>
+</nav>  -->
+
+  <nav class="navbar">
+  <div class="logo">MyBrand</div>
+  
+  <!-- Hamburger Button for Mobile -->
+  <button class="menu-toggle" aria-label="Toggle menu">
+    ☰
+  </button>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallary.html">Services</a></li>
+    <li><a href="blog.html">Contact</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </nav>
+  
 
 <section class="hero">
 <div class="container text-center">
