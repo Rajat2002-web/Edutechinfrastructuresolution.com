@@ -21,7 +21,57 @@
   border-radius: 50%;    /* Turns the square into a perfect circle */
   object-fit: cover;     /* Prevents the logo image from stretching or distorting */
 }
+/* Base styles (Mobile First) */
+.navbar-nav ms-auto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
 
+.navbar-nav ms-auto {
+  display: block; /* Visible on mobile */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-link {
+  display: none; /* Hidden by default on mobile */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Media Query for Desktop (Screens larger than 768px) */
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide hamburger icon on desktop */
+  }
+
+  .nav-link {
+    display: flex; /* Show horizontal links on desktop */
+    flex-direction: row;
+    position: static;
+    width: auto;
+  }
+}
+  
 body{font-family:Arial,sans-serif}
 .navbar{background:#0A4D8C}
 .hero{background:linear-gradient(rgba(10,77,140,.8),rgba(10,77,140,.8)),url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover;height:70vh;color:#fff;display:flex;align-items:center}
